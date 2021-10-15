@@ -1,7 +1,6 @@
 require('dotenv').config()
 const mongoose = require('mongoose');
 
-const connection = "mongodb+srv://chromaUser:xe13PWbS6uPrADCM@cluster0.f5n4v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(connection,{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
     .then(() => console.log("Database Connected Successfully"))
     .catch(err => console.log(err));
