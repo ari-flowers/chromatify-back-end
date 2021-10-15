@@ -8,7 +8,8 @@ const trackSchema = mongoose.Schema({
   artistName: {
     type: String,
     required: true
-  }
+  },
+
 })
 
 module.exports = mongoose.model('Track', trackSchema)
