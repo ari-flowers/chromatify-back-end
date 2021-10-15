@@ -1,11 +1,11 @@
 require('dotenv').config()
 const mongoose = require('mongoose');
-
+const connection = process.env.DB_URL || 'mongodb://localhost/chromatifys'
 mongoose.connect(connection,{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
     .then(() => console.log("Database Connected Successfully"))
     .catch(err => console.log(err));
 
-const DB_URL = process.env.DB_URL || 'mongodb://localhost/chromatifys'
+// const DB_URL = process.env.DB_URL || 'mongodb://localhost/chromatifys'
 
 // // Error / Disconnect
 // mongoose.connection.on('error', err => console.log(err.message + ' is Mongod not running?'))
