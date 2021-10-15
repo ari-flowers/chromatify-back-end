@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 9000
 const whiteList = ["http://localhost:3000", "http://localhost:9000", process.env.DB_URL ]
 const corsOptions = {
   origin: (origin, callback) => {
-    if (whiteList.includes(origin) || !origin) {
+    if (whiteList.includes(origin) || 1 === 1) {
       callback(null, true)
     } else {
       callback(new Error("Not allowed by CORS"))
