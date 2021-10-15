@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ari-flowers/chromatify-back-end/issues"
   },
-  "homepage": "https://github.com/ari-flowers/chromatify-back-end#readme"
+  "homepage": "https://github.com/ari-flowers/chromatify-back-end#readme",
+  "dependencies": {
+    "method-override": "^3.0.0"
+  }
 }
