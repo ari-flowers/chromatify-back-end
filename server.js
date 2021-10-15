@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 9000
 //middleware
 
 //whitelist heroku and surge later on!
-const whiteList = ["http://localhost:3000", process.env.DB_URL ]
+const whiteList = ["http://localhost:3000", "http://localhost:9000", process.env.DB_URL ]
 const corsOptions = {
   origin: (origin, callback) => {
     if (whiteList.includes(origin) || !origin) {
