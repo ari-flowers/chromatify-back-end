@@ -38,5 +38,5 @@ app.use('/chromatify', chromatifyController)
 //listener
 
 app.listen(PORT, () => {
-  console.log('👁 👄👁 🎧 🎵', `Welcome to Chromatify, we're live on ${PORT}`);
+  console.log(`Welcome to Chromatify, we're live on ${PORT}`);
 })
