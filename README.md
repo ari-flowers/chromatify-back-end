@@ -1,5 +1,6 @@
 # Chromatify Back End
 chromatify.surge.sh
+https://chromatify.herokuapp.com/chromatify
 
 # Description
 Chromatify is a simplified Spotify search app utilizing OAuth to access Spotify's API to display results.
